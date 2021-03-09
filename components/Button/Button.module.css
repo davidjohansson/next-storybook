@@ -1,0 +1,178 @@
+/** Basic configuration for a button **/
+.Button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: var(--radius-button-dsm);
+
+  padding-left: var(--space-s);
+  padding-right: var(--space-s);
+
+  font-weight: bold;
+
+  height: 46px;
+}
+.Button:focus:after {
+  position: absolute;
+  content: '';
+  top: -4px;
+  bottom: -4px;
+  right: -4px;
+  left: -4px;
+  border: 2px solid var(--color-primary-300);
+  border-radius: 10px;
+}
+
+/** Line height needs to be reset for icon to display properly **/
+.Button-loading {
+  line-height: 0;
+}
+
+/** The styling for the current web button is represented as oldPrimary **/
+.Button-oldPrimary {
+  color: var(--c_background);
+  background-color: var(--c_color_alpha);
+  border-radius: var(--d_radius_large);
+}
+.Button-oldPrimary:focus:not(:disabled) {
+  color: var(--c_background);
+  background-color: var(--c_color_alpha);
+}
+.Button-oldPrimary:focus:after {
+  color: var(--c_background);
+  top: -8px;
+  bottom: -8px;
+  right: -8px;
+  left: -8px;
+  border: 2px solid var(--c_color_alpha);
+  border-radius: 22px;
+}
+.Button-oldPrimary:hover:not(:disabled) {
+  color: var(--c_background);
+  background-color: var(--c_color_alpha_dark);
+}
+.Button-oldPrimary:active:not(:disabled) {
+  color: var(--c_background);
+  background-color: var(--c_color_alpha_dark);
+}
+
+/** Design system button Primary **/
+.Button-primary {
+  color: var(--c_background);
+  background-color: var(--color-primary-400);
+}
+.Button-primary:focus:not(:disabled) {
+  color: var(--c_background);
+  background-color: var(--color-primary-400);
+}
+.Button-primary:hover:not(:disabled) {
+  color: var(--c_background);
+  background-color: var(--color-primary-500);
+}
+.Button-primary:active:not(:disabled) {
+  color: var(--c_background);
+  background-color: var(--color-primary-500);
+}
+
+/** Design system button Secondary **/
+.Button-secondary {
+  color: var(--color-neutral-800);
+  background-color: var(--color-neutral-200);
+}
+.Button-secondary:focus:not(:disabled) {
+  color: var(--color-neutral-800);
+  background-color: var(--color-neutral-200);
+}
+.Button-secondary:hover:not(:disabled) {
+  color: var(--color-neutral-800);
+  background-color: var(--color-neutral-300);
+}
+.Button-secondary:active:not(:disabled) {
+  color: var(--color-neutral-800);
+  background-color: var(--color-neutral-400);
+}
+
+/** Design system button Disabled **/
+.Button-disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  background: var(--color-neutral-200);
+  color: var(--color-neutral-300);
+}
+.Button-disabled:focus {
+  background: var(--color-neutral-200);
+  color: var(--color-neutral-300);
+}
+.Button-disabled:hover {
+  background: var(--color-neutral-200);
+  color: var(--color-neutral-300);
+}
+.Button-disabled:active {
+  background: var(--color-neutral-200);
+  color: var(--color-neutral-300);
+}
+
+/** Fullwidth-class is applied when the fullwidth prop is given **/
+.Button-fullWidth {
+  width: 100%;
+}
+
+/** Design system link (href) style as button **/
+.Button-link {
+  display: inline-flex;
+  text-decoration: none;
+}
+
+/** Small button class, change paddings and height. **/
+.Button-small {
+  padding-left: var(--space-xxs);
+  padding-right: var(--space-xxs);
+  height: 32px;
+}
+
+.IconButton {
+  padding: 0;
+  border-radius: var(--radius-button-dsm);
+}
+.IconButton:focus:after {
+  border-radius: 10px;
+  top: -4px;
+  bottom: -4px;
+  right: -4px;
+  left: -4px;
+  border: 2px solid var(--color-primary-300);
+  border-radius: 10px;
+}
+
+.IconButton-medium {
+  height: 46px;
+  width: 46px;
+}
+
+.IconButton-small {
+  height: 32px;
+  width: 32px;
+}
+
+/* TODO: Figure this out! */
+.c-buttonPlain {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.c-buttonPlain:focus {
+  outline: none;
+  border: 2px solid var(--c_color_alpha);
+  border-radius: var(--radius-button-dsm);
+}

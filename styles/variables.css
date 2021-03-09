@@ -1,0 +1,133 @@
+:root {
+  /* Breakpoints */
+  --b_xs: screen and (max-width: 575px);
+  --b_sm: screen and (min-width: 576px);
+  --b_md: screen and (min-width: 768px);
+  --b_lg: screen and (min-width: 1024px);
+  --b_xl: screen and (min-width: 1176px);
+  --b_sm_max: screen and (max-width: 767px);
+  --b_md_max: screen and (max-width: 1023px);
+  --b_lg_max: screen and (max-width: 1175px);
+
+  /* === COLOR === */
+  --c_color_alpha: #0c71bf;
+  --c_color_alpha_dark: #0a4a7c;
+  --c_color_beta: #e50051;
+  --c_color_gamma: #3aaa35;
+  --c_light_alpha: #252525;
+  --c_light_beta: #dcdcdc;
+  --c_light_gamma: #f4f4f4;
+  --c_light_epsilon: #faf5e1;
+  --c_text: #000000;
+  --c_background: #ffffff;
+  --c_code: #252525;
+  --c_valid: #95c11f;
+  --c_warning: #e1741b;
+  --c_invalid: #d71d24;
+  --c_disruption: #ff5c1c;
+  --c-no__disruption: #179d4d;
+  --c_external_travel: #58358a;
+
+  /** New design system colors **/
+  --color-black: #000000;
+  --color-dark-blue: dodgerblue;
+  --color-light-blue: lightblue;
+
+  --color-dark-grey: #999999;
+  --color-grey: #ccc;
+
+  --color-neutral-200: #f1f2f3;
+  --color-neutral-300: #d8dadc;
+  --color-neutral-400: #c0c2c6;
+  --color-neutral-800: #000000;
+
+  --color-primary-300: #7ab4ff;
+  --color-primary-400: #328cff;
+  --color-primary-500: #0a47c2;
+
+  /* Transports */
+  --c_metro_blue: #0089ca;
+  --c_metro_red: #d71d24;
+  --c_metro_green: #179d4d;
+  --c_tram_saltsjobanan: #008f93;
+  --c_tram_roslagsbanan: #9f599a;
+  --c_tram_sparvagcity: #878a83;
+  --c_tram_nockebybanan: #778da7;
+  --c_tram_lidingobanan: #b76020;
+  --c_tram_tvarbanan: #d77d00;
+  --c_train_commuterrail: #ec619f;
+  --c_bus_blue: #0097da;
+  --c_bus_red: #d71d24;
+  --c_ship: #0097da;
+  --c_walk: #000;
+  --c_bike: #fbff00;
+  --c_unknown: #000;
+  --c_regionaltrain: var(--c_external_travel);
+  --c_expresstrain: var(--c_external_travel);
+  --c_expressbus: var(--c_external_travel);
+
+  /* === SHADOWS === */
+  --s_box_shadow: 1px 1px 4px 0 rgba(111, 111, 111, 0.58);
+  /* === Z-INDEX === */
+  --z_floating: 1000;
+  --z_context_menu: 1500;
+  --z_popup: 2000;
+
+  /* === FONT STACK === */
+  --f_stack: "SL Gothic", sans-serif;
+  --f_stack_icons: "Icons", sans-serif;
+
+  --f_weight-bold-label: 700;
+
+  /* === TIMINGS === */
+  --t_animation: 200ms;
+
+  /* === DIMENSIONS === */
+  --d_fs: 16px;
+  --d_fs_delta: 2;
+  --d_lh: 24px;
+  --d_lh_delta: 4;
+
+  /* Spacings */
+  /* https://www.figma.com/file/rNvpernOG8A8EB8xAhv1o9/SL-Foundation-Library?node-id=885%3A0 */
+  --space-xxs: 8px;
+  --space-xs: 16px;
+  --space-s: 24px;
+  --space-m: 32px;
+  --space-l: 40px;
+  --space-xl: 48px;
+  --space-xxl: 64px;
+
+  /* Input and button sizing. */
+  --size-medium: 46px;
+  --size-small: 32px;
+
+  /* Radius */
+  --d_radius: 4px;
+  --d_radius_large: 15px;
+  --d_radius_metro: 4px;
+  --d_radius_lightrail: 10% / 50%;
+  --d_radius_tram: 10% / 50%;
+  --d_radius_train: 50% / 100%;
+
+  --radius-button-dsm: 8px;
+
+  /* Borders */
+  --border-width: 2px;
+  --border-radius: 8px;
+
+  /* Grid */
+  --d_columns: 12;
+  --d_columns_gap: 1rem;
+  --d_columns_gap-none: 0;
+
+  /* Devices */
+  --d_xs: 543px;
+  --d_sm: 544px;
+  --d_md: 768px;
+  --d_lg: 992px;
+  --d_xl: 1280px;
+  --d_sm_max: 767px /* One less than counter part */;
+  --d_md_max: 991px /* One less than counter part */;
+  --d_lg_max: 1279px /* One less than counter part */;
+}

@@ -1,0 +1,15 @@
+.c-spinner {
+	fill: currentColor;
+}
+
+.c-spinner__semi-circle {
+	transform-origin: 50% 4%;
+	transform-box: fill-box;
+	animation:spin 1s linear infinite;
+}
+
+.c-spinner__semi-circle--reverse {
+	animation: spin 1s linear infinite reverse;
+}
+
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
