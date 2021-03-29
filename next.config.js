@@ -7,7 +7,14 @@ module.exports = {
         source: '/api/:any*',
         destination: '/api/:any*',
       },
-      // Rewrite everything else to use `pages/index`
+      {
+        source: "/returns/:any*",
+        destination: "/returns",
+      },
+      {
+        source: "/settings/:any*",
+        destination: "/settings",
+      },
       {
         source: '/:any*',
         destination: '/',

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Link as RouterLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
   AppBar,
@@ -23,9 +22,6 @@ const TopBar = ({ onMobileNavOpen, ...rest }) => {
       {...rest}
     >
       <Toolbar>
-        <RouterLink to="/">
-          <Logo />
-        </RouterLink>
         <Box sx={{ flexGrow: 1 }} />
         <Hidden mdDown>
           <IconButton color="inherit">

@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { Link as RouterLink, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
   Avatar,
@@ -47,14 +46,7 @@ const items = [
   },
 ];
 
-const NavBar = ({ onMobileClose, openMobile }) => {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (openMobile && onMobileClose) {
-      onMobileClose();
-    }
-  }, [location.pathname]);
+const NavBar = () => {
 
   const content = (
     <Box
@@ -72,16 +64,16 @@ const NavBar = ({ onMobileClose, openMobile }) => {
           p: 2
         }}
       >
-        <Avatar
-          component={RouterLink}
-          src={user.avatar}
-          sx={{
-            cursor: 'pointer',
-            width: 64,
-            height: 64
-          }}
-          to="/app/account"
-        />
+        {/*<Avatar*/}
+        {/*  component={RouterLink}*/}
+        {/*  src={user.avatar}*/}
+        {/*  sx={{*/}
+        {/*    cursor: 'pointer',*/}
+        {/*    width: 64,*/}
+        {/*    height: 64*/}
+        {/*  }}*/}
+        {/*  to="/app/account"*/}
+        {/*/>*/}
         <Typography
           color="textPrimary"
           variant="h5"
@@ -117,8 +109,6 @@ const NavBar = ({ onMobileClose, openMobile }) => {
       <Hidden lgUp>
         <Drawer
           anchor="left"
-          onClose={onMobileClose}
-          open={openMobile}
           variant="temporary"
           PaperProps={{
             sx: {
